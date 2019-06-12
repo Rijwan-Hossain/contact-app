@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg-danger text-white py-2">
+        <h1 class="text-center">
+            Contact App
+        </h1>
+    </div>
+
+    <div class="container mt-2">
+        <h2 id="contactSize"></h2>
+        <div class="py-4">
+            <h3>
+                Create New contact
+            </h3>
+
+            <form class="form-inline">
+                <input type="text" id="name" placeholder="Enter name" class="form-control col-3 my-2 mr-3" required />
+                <input type="text" id="phone" placeholder="Enter phone number" class="form-control col-3 my-2 mx-3"
+                    required /> 
+                <input type="email" id="email" placeholder="Enter email" class="form-control col-3 my-2 mx-3" /> <br> 
+            </form> 
+            <button id="create" class="btn btn-success"> 
+                Save 
+            </button> 
+        </div> 
+
+        <div class="mt-1 form-group mb-5">
+            <input 
+                type="text" id="search" 
+                placeholder="Search by name" 
+                class="form-control col-3" /> 
+            <button id="reset" class="btn btn-dark mt-2">
+                Reset
+            </button>
+        </div> 
+        <h1 id="contacts"></h1> 
+        <ul id="list" class="list-group"></ul> 
+    </div> 
+
+    <script src="app.js"></script> 
+</body>
+
+</html>
